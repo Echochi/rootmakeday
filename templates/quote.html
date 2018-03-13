@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Quote</title>
+{% if model_name %}
+  <h1>The {{ model_name }} needs a quote!</h1>
+  {% if response %}
+    <h1>The {{ model_name }} quote is: {{ response }}</h1>
+  {% endif %}
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
